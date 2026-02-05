@@ -1,0 +1,33 @@
+{
+    "name": "reveal",
+    "displayName": "Reveal",
+    "description": "Show reveal in sidebar/explorer on editor title",
+    "version": "0.0.1",
+    "publisher": "veloek",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/veloek/reveal"
+    },
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "icon": "icons/128_icon.png",
+    "contributes": {
+        "commands": {
+            "command": "workbench.files.action.showActiveFileInExplorer",
+            "title": "Reveal",
+            "icon": {
+                "dark": "./icons/icon-dark.svg",
+                "light": "./icons/icon-dark.svg"
+            }
+        },
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "workbench.files.action.showActiveFileInExplorer",
+                    "group": "navigation"
+                }
+            ]
+        }
+    }
+}
